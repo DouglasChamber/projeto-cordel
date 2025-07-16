@@ -20,16 +20,17 @@ html, body {
   min-height: 100vh;
   background-color: darkgray;
   font-family: var(--fonte1);
-  padding-top: 80px; 
+  padding-top: 200px; /* Deve ser igual à altura do header */
   scroll-behavior: smooth;
 }
 
+/* Header fixo */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200px;
+  height: 200px; /* Altura fixa */
   background-color: black;
   color: white;
   text-align: center;
@@ -61,6 +62,7 @@ header a:hover, footer a:hover {
   text-decoration: underline;
 }
 
+/* Seções de conteúdo */
 section {
   padding: 10vh 30px;
   line-height: 2em;
@@ -102,7 +104,6 @@ footer {
 }
 
 /* Botão voltar ao topo */
-
 .voltar-topo {
   position: fixed;
   bottom: 42px;
@@ -124,4 +125,20 @@ footer {
 .voltar-topo:hover {
   background-color: #444;
   transform: scale(1.1);
+}
+
+/* Ajustes responsivos para celular */
+@media (max-width: 600px) {
+  header {
+    height: 150px;
+  }
+  html, body {
+    padding-top: 150px; /* igual à altura do header no celular */
+  }
+  header > h1 {
+    font-size: 8vw;
+  }
+  section {
+    font-size: 4vw;
+  }
 }
