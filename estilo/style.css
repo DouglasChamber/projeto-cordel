@@ -20,8 +20,26 @@ html, body {
   min-height: 100vh;
   background-color: darkgray;
   font-family: var(--fonte1);
-  padding-top: 150px; /* compensar header responsivo */
   scroll-behavior: smooth;
+}
+
+/* Compensação para header fixo com valores adaptativos */
+@media (max-width: 480px) {
+  html, body {
+    padding-top: 110px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  html, body {
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1025px) {
+  html, body {
+    padding-top: 150px;
+  }
 }
 
 header {
@@ -39,12 +57,12 @@ header {
 header > h1 {
   font-variant: small-caps;
   font-family: var(--fonte2);
-  font-size: clamp(32px, 8vw, 80px); /* responsivo entre 32px e 80px */
+  font-size: clamp(32px, 8vw, 80px);
   margin: 0;
 }
 
 header > p {
-  font-size: clamp(14px, 3vw, 24px); /* responsivo */
+  font-size: clamp(14px, 3vw, 24px);
   margin-top: 10px;
 }
 
@@ -63,7 +81,7 @@ section {
   padding: 10vh 5vw;
   line-height: 2em;
   font-family: var(--fonte3);
-  font-size: clamp(18px, 3.5vw, 32px); /* responsivo */
+  font-size: clamp(18px, 3.5vw, 32px);
   color: black;
   background-color: white;
 }
