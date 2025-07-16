@@ -4,136 +4,124 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: 'Passion One', cursive;
+  --fonte3: 'Sriracha', cursive;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 1em;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
-html {
-    background-color: darkgray; /* cor geral do site */
-    height: 100%;
-}
-
-body {
-    min-height: 100vh;
-    background-color: white;  /* fundo branco igual ao conteúdo */
-    font-family: var(--fonte1);
-    padding-top: 200px;  /* empurra conteúdo para não ficar atrás do header */
-    scroll-behavior: smooth;
+html, body {
+  min-height: 100vh;
+  background-color: darkgray;
+  font-family: var(--fonte1);
+  padding-top: 80px; 
+  scroll-behavior: smooth;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    z-index: 1000;
-    padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 header > h1 {
-    font-variant: small-caps;
-    font-family: var(--fonte2);
-    font-size: 10vw;
-    padding-top: 50px;
-    margin: 0;
+  font-variant: small-caps;
+  font-family: var(--fonte2);
+  font-size: 10vw;
+  padding-top: 10px;
+  margin: 0;
 }
 
 header > p {
-    padding-bottom: 50px;
-    margin: 0;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 header a, footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 header a:hover, footer a:hover {
-    text-decoration: underline;
+  color: purple;
+  text-decoration: underline;
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30px;
-    line-height: 2em;
-    font-family: var(--fonte3);
-    font-size: 3.5vw;
-}
-
-section > p {
-    padding-bottom: 2em;
-}
-
-section.normal {
-    background-color: white;
-    color: black;
+  padding: 10vh 30px;
+  line-height: 2em;
+  font-family: var(--fonte3);
+  font-size: 3.5vw;
+  color: black;
+  background-color: white;
 }
 
 section.imagem {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size: cover;
-    background-attachment: fixed;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.473);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section.imagem > p {
-    display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.514);
+  text-shadow: 1px 1px 0 black;
 }
 
 section#img01 {
-    background-image: url('../imagens/background001.jpg');
-    background-position: right center;
+  background-image: url('../imagens/img01.jpg');
+  background-position: right center;
 }
 
 section#img02 {
-    background-image: url('../imagens/background002.jpg');
+  background-image: url('../imagens/img02.jpg');
 }
 
 footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 
 /* Botão voltar ao topo */
+
 .voltar-topo {
-    position: fixed;
-    bottom: 42px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-    transition: background 0.3s ease, transform 0.2s;
-    z-index: 999;
+  position: fixed;
+  bottom: 42px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s ease, transform 0.2s;
+  z-index: 999;
 }
 
 .voltar-topo:hover {
-    background-color: #444;
-    transform: scale(1.1);
+  background-color: #444;
+  transform: scale(1.1);
 }
