@@ -20,8 +20,7 @@ html, body {
   min-height: 100vh;
   background-color: darkgray;
   font-family: var(--fonte1);
-  /* Ajuste direto para compensar altura do header fixo */
-  padding-top: 200px;
+  padding-top: 80px; 
   scroll-behavior: smooth;
 }
 
@@ -41,8 +40,7 @@ header {
 header > h1 {
   font-variant: small-caps;
   font-family: var(--fonte2);
-  /* opcional: font-size responsivo */
-  font-size: clamp(24px, 10vw, 80px);
+  font-size: 10vw;
   padding-top: 10px;
   margin: 0;
 }
