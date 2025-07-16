@@ -78,12 +78,24 @@ header a:hover, footer a:hover {
 }
 
 section {
-  padding: 10vh 5vw;
+  padding: 5vh 5vw; /* reduzido de 10vh para aproximar do header */
   line-height: 2em;
   font-family: var(--fonte3);
   font-size: clamp(18px, 3.5vw, 32px);
   color: black;
   background-color: white;
+}
+
+/* Remove margens no primeiro elemento das seções */
+section > :first-child,
+main > :first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Também zera margens superiores em títulos e parágrafos */
+h1, h2, h3, p {
+  margin-top: 0;
 }
 
 section.imagem {
