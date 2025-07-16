@@ -18,10 +18,11 @@
 
 html, body {
   min-height: 100vh;
-  background-color: darkgray;
+  /* TROQUEI darkgray para branco para eliminar a borda cinza */
+  background-color: white;
   font-family: var(--fonte1);
   scroll-behavior: smooth;
-  /* padding-top responsivo para compensar header fixo */
+  /* Padding-top para compensar o header fixo */
   padding-top: clamp(90px, 18vw, 140px);
 }
 
@@ -61,7 +62,7 @@ header a:hover, footer a:hover {
 }
 
 section {
-  padding: 5vh 5vw; /* redução para aproximar do header */
+  padding: 5vh 5vw; /* mantém espaçamento agradável */
   line-height: 2em;
   font-family: var(--fonte3);
   font-size: clamp(18px, 3.5vw, 32px);
@@ -69,7 +70,7 @@ section {
   background-color: white;
 }
 
-/* Remove margens no primeiro elemento das seções */
+/* Zera margem do primeiro elemento para evitar espaços extras */
 section > :first-child,
 main > :first-child {
   margin-top: 0;
