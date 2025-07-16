@@ -21,25 +21,8 @@ html, body {
   background-color: darkgray;
   font-family: var(--fonte1);
   scroll-behavior: smooth;
-}
-
-/* Compensação para header fixo com valores adaptativos */
-@media (max-width: 480px) {
-  html, body {
-    padding-top: 110px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1024px) {
-  html, body {
-    padding-top: 130px;
-  }
-}
-
-@media (min-width: 1025px) {
-  html, body {
-    padding-top: 150px;
-  }
+  /* padding-top responsivo para compensar header fixo */
+  padding-top: clamp(90px, 18vw, 140px);
 }
 
 header {
@@ -78,7 +61,7 @@ header a:hover, footer a:hover {
 }
 
 section {
-  padding: 5vh 5vw; /* reduzido de 10vh para aproximar do header */
+  padding: 5vh 5vw; /* redução para aproximar do header */
   line-height: 2em;
   font-family: var(--fonte3);
   font-size: clamp(18px, 3.5vw, 32px);
@@ -93,7 +76,7 @@ main > :first-child {
   padding-top: 0;
 }
 
-/* Também zera margens superiores em títulos e parágrafos */
+/* Remove margens superiores em títulos e parágrafos */
 h1, h2, h3, p {
   margin-top: 0;
 }
