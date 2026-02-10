@@ -20,7 +20,8 @@ html, body {
   min-height: 100vh;
   background-color: darkgray;
   font-family: var(--fonte1);
-  padding-top: 80px; /* espaço para o header fixo */
+  padding-top: 80px; 
+  scroll-behavior: smooth;
 }
 
 header {
